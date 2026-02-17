@@ -57,7 +57,7 @@
         </p>
     </section>
 
-    <section class="m-4">
+    <section class="cards m-4">
         <h2 class="mt-16 font-bold text-3xl mb-4 font-poppins">Nossos Cursos</h2>
 
         <div class="bg-white rounded shadow-sm border border-gray-100 overflow-hidden mb-8">
@@ -144,8 +144,84 @@
                 </div> 
             </div>
         </div>
+    </section>
+
+
+    <section class="matricula">
+        <h1 class="m-4 font-bold text-2xl">Matrícula</h1>
+        <div class="formularioMatricula m-4 flex border rounded-lg p-4"> 
+
+            <form class="w-full">
+                <h1 class="font-bold text-xl mb-6">Formulário de Matrícula</h1>
+
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" 
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent w-[100%]">
+                </div>
+
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="email">Email *</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email" 
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent">
+                </div>
+
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="telefone">Telefone *</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="CPF">CPF *</label>
+                    <input type="text" id="CPF" name="CPF" placeholder="000.000.000-00"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="cep">Curso Desejado *</label>
+                    <select id="curso" class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent " name="curso" required>
+                       <option value="" disabled selected hidden>Selecione um Curso</option>
+        
+                        <option value="fullstack" class="text-black">Desenvolvimento Fullstack</option>
+                        <option value="data" class="text-black">Data Science</option> 
+                        <option value="marketing" class="text-black">Marketing Digital & SEO</option>
+                        <option value="ux" class="text-black">UI/UX Design</option>
+                    </select> 
+                </div>
+                
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="Rua">Rua *</label>
+                    <input type="text" id="Rua" name="Rua" placeholder="00000-000"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+                
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="Bairro">Bairro *</label>
+                    <input type="text" id="Bairro" name="Bairro"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+
+                 <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="Cidade">Cidade *</label>
+                    <input type="text" id="Cidade" name="Cidade"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+
+                 <div class="flex flex-col mb-4">
+                    <label class="font-semibold text-[14px] font-inter text-gray-700 font-poppins mb-1" for="Estado">Estado *</label>
+                    <input type="text" id="Estado" name="Estado"  
+                    class="border border-gray-300 font-inter p-2 text-[14px] rounded-lg bg-transparent ">
+                </div>
+
+                <input type="submit" value="Enviar Matrícula" class="block bg-blue-600 font-semibold text-white text-[14px] p-2 !mt-14 w-full rounded-lg font-inter">
+
+            </form>
+        </div>  
 
     </section>
+
+    
     
 </body>
 </html>
