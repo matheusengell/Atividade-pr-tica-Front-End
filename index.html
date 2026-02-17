@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTech Academy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+        tailwind.config = {
+            theme: { 
+            extend: {
+                fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
+                }
+            }
+            }
+        }
+    </script>
 </head>
 <body class="bg-[#F9F9F9] font-sans text-gray-900">
 
@@ -12,7 +24,7 @@
         <nav class="flex items-center justify-between w-full px-5 py-4 max-w-7xl mx-auto"> 
             <div class="flex items-center gap-4">
                 <img src="assets/img/logo.svg" alt="logo da empresa EduTech" class="w-8 h-8">
-                <h1 class="text-[#0077CC] font-bold text-xl">EduTech Academy</h1>
+                <h1 class="text-[#0077CC] font-bold text-xl font-poppins">EduTech Academy</h1>
             </div>
 
             <div class="flex items-center gap-4 lg:gap-8">
@@ -36,23 +48,23 @@
         </nav>
     </header>
 
-    <section class="mt-6 lg:mt-12 flex flex-col items-center text-center px-5 max-w-4xl mx-auto">
-        <h1 class="font-bold text-4xl lg:text-6xl text-gray-900 leading-tight">
+    <section class="mt-6 flex flex-col items-center text-center px-5 ">
+        <h1 class="font-bold text-4xl text-gray-900 font-poppins">
             Construa seu futuro com a EduTech Academy
         </h1>
-        <p class="mt-4 text-lg lg:text-xl text-gray-500 lg:w-[85%]">
+        <p class="mt-4 text-lg lg:text-xl text-gray-500 lg:w-[85%] font-inter">
             Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.
         </p>
     </section>
 
-    <section class="m-8 lg:max-w-7xl lg:mx-auto">
-        <h2 class="font-bold text-3xl mb-8">Nossos Cursos</h2>
+    <section class="m-4">
+        <h2 class="mt-16 font-bold text-3xl mb-4 font-poppins">Nossos Cursos</h2>
 
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden max-w-sm hover:shadow-md transition">
+        <div class="bg-white rounded shadow-sm border border-gray-100 overflow-hidden mb-8">
             <img src="./assets/img/fullstack.jpg" alt="imagem do curso fullstack" class="w-full h-48 object-cover">
             
             <div class="p-6">
-                <h3 class="font-bold text-xl mb-3">Desenvolvimento Web Fullstack</h3>
+                <h3 class="font-bold text-base mb-3 font-poppins">Desenvolvimento Web Fullstack</h3>
                 
                 <div class="space-y-2">
                     <div class="flex items-center gap-2">
@@ -62,11 +74,77 @@
 
                     <div class="flex items-center gap-2">
                         <img src="./assets/img/map-pin.svg" alt="ícone local" class="w-5 opacity-70">
-                        <p class="text-sm text-gray-500 font-medium uppercase">EAD</p> 
+                        <p class="text-sm text-gray-500 font-medium">EAD</p> 
                     </div>
+
+                    <button class="bg-blue-600 text-white p-2 w-full !mt-6 rounded font-inter ">Ver detalhes</button>
                 </div>
             </div>
         </div>
+
+        <div class="bg-white rounded shadow-sm border border-gray-100 overflow-hidden mb-8">
+            <img src="./assets/img/data-science.jpg" alt="imagem do curso fullstack" class="w-full h-48 object-cover">
+            
+            <div class="p-6">
+                <h3 class="font-bold text-base mb-3 font-poppins">Data Science & Machine Learning</h3>
+                
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/clock.svg" alt="ícone relógio" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">100 horas</p> 
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/map-pin.svg" alt="ícone local" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">Presencial</p> 
+                    </div>
+                     <button class="block bg-blue-600 text-white p-2 !mt-6 w-full rounded font-inter">Ver detalhes</button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="bg-white rounded shadow-sm border border-gray-100 overflow-hidden mb-8">
+            <img src="./assets/img/marketing.jpg" alt="imagem do curso fullstack" class="w-full h-48 object-cover">
+            
+            <div class="p-6">
+                <h3 class="font-bold text-base mb-3 font-poppins">Marketing Digital & SEO</h3>
+                
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/clock.svg" alt="ícone relógio" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">80 horas</p> 
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/map-pin.svg" alt="ícone local" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">EAD</p> 
+                    </div>
+                     <button class="block bg-blue-600 text-white p-2 !mt-6 w-full rounded font-inter">Ver detalhes</button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="bg-white rounded shadow-sm border border-gray-100 overflow-hidden mb-8">
+            <img src="./assets/img/data-science.jpg" alt="imagem do curso fullstack" class="w-full h-48 object-cover">
+            
+            <div class="p-6">
+                <h3 class="font-bold text-base mb-3 font-poppins">UX/UI Design</h3>
+                
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/clock.svg" alt="ícone relógio" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">90 horas</p> 
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/img/map-pin.svg" alt="ícone local" class="w-5 opacity-70">
+                        <p class="text-sm text-gray-500 font-medium">Presencial</p> 
+                    </div>
+                     <button class="block bg-blue-600 text-white p-2 !mt-6 w-full rounded font-inter">Ver detalhes</button>
+                </div> 
+            </div>
+        </div>
+
     </section>
     
 </body>
